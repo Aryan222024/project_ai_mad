@@ -170,10 +170,11 @@ public class MainActivity extends AppCompatActivity {
        }
         else if (slope<0)
        {
-           interpretataion="you are a good learner";
+           interpretataion="you are a not learner";
 
 
-        }
+        }else if(dataFrame[0][1] == 0 && slope == 0)
+           interpretataion = "You are not Learning";
         else if(dataFrame[0][1] ==3 && slope ==0)
        {
            interpretataion="you achieve perfection";
